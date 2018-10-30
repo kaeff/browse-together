@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Browse Together",
+  "version": "0.1",
+  "description": "Adds together.js to the page",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": ["togetherjs-min.js", "button.js"],
+  "permissions": [
+    "tabs"
+  ]
+}
