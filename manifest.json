@@ -10,9 +10,18 @@
       ],
       "js": [
         "index.js"
-      ]
+     ]
     }
   ],
+
+  "browser_action": {
+    "default_icon": "icons/togetherjs-logo@2x.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
   "web_accessible_resources": ["togetherjs-min.js", "button.js"],
   "permissions": [
     "tabs"

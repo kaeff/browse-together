@@ -1,7 +1,9 @@
+var browser = (typeof browser === "object") ? browser : chrome;
+
 function loadScript(name) {
   var s = document.createElement('script');
   // TODO: add "script.js" to web_accessible_resources in manifest.json
-  s.src = chrome.extension.getURL(name);
+  s.src = browser.extension.getURL(name);
   //s.onload = function() {
     //this.remove();
   //};
@@ -9,5 +11,10 @@ function loadScript(name) {
 }
 loadScript('togetherjs-min.js');
 loadScript('button.js');
-console.log("ran index.js");
 
+browser.runtime.onMessage.addListener(request => {
+	window.postMessage(request);
+	return Promise.resolve({response: "Hi from content script"});
+});
+
+console.log("ran index.js");
