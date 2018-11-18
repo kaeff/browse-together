@@ -16,5 +16,3 @@ browser.runtime.onMessage.addListener(request => {
 	window.postMessage(request);
 	return Promise.resolve({response: "Hi from content script"});
 });
-
-console.log("ran index.js");

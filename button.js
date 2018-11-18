@@ -7,5 +7,3 @@ window.addEventListener("message", function(e) {
 		initTogetherJs();
 	}
 });
-
-console.log('loaded button.js');
