@@ -6,6 +6,9 @@ A browser extension to view websites together, in real time.
 
 The real-time part is done by Mozilla's TogetherJS. This extension just ships it, inserts it into an arbitrary page and allows to start a session.
 
+## Status
+
+Proof of Concept / Work in progress
 
 ## Future plans
 
