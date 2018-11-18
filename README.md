@@ -1,10 +1,22 @@
 # Browse Together
 
-A browser extension to view websites together, in real time.
+A browser extension to view websites together, in real time. No set up
+required, just install the extension and share a link with your peer.
 
 ## What it does
 
 The real-time part is done by Mozilla's TogetherJS. This extension just ships it, inserts it into an arbitrary page and allows to start a session.
+
+Unlike a browser tab sync plugin, it doesn't require a user account with
+the browser vendor
+
+Unlike a screen sharing solution, it should only share the commands, not
+a video feed, and thus should be much more responsive while requiring
+less bandwidth.
+
+Unlike "customer support" kind of applications, the main use case is remote pair programming.
+
+It's like a shared tmux + vim session, but for stack overflow :)
 
 ## Status
 
@@ -44,3 +56,9 @@ Proof of Concept / Work in progress
 1) On some pages, clicks aren't synced
 1) How does it behave on pages with login? e.g. jira
 1) What if the page state get
+1) iframe support?
+
+
+### Alternatives
+
+* [surfly](https://www.surfly.com/)
