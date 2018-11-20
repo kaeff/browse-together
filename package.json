@@ -4,7 +4,6 @@
   "description": "A browser extension to view websites together, in real time. No set up required, just install the extension and share a link with your peer.",
   "main": "index.js",
   "dependencies": {
-    "togetherjs": "0.0.1",
     "web-ext": "^2.9.2"
   },
   "devDependencies": {},
