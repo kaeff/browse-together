@@ -1,0 +1,23 @@
+{
+  "name": "browse-together",
+  "version": "0.0.1",
+  "description": "A browser extension to view websites together, in real time. No set up required, just install the extension and share a link with your peer.",
+  "main": "index.js",
+  "dependencies": {
+    "web-ext": "^2.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "web-ext run --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaeff/browse-together.git"
+  },
+  "author": "kaeff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaeff/browse-together/issues"
+  },
+  "homepage": "https://github.com/kaeff/browse-together#readme"
+}
