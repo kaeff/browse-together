@@ -3,6 +3,10 @@
 A browser extension to view websites together, in real time. No set up
 required, just install the extension and share a link with your peer.
 
+## Install
+
+* [Add to Firefox](https://addons.mozilla.org/en-US/firefox/addon/browse-together/)
+
 ## What it does
 
 The real-time part is done by Mozilla's TogetherJS. This extension just ships it, inserts it into an arbitrary page and allows to start a session.
@@ -28,7 +32,7 @@ Proof of Concept / Work in progress
 
 1)  [x] Create an extension that includes TogetherJS in every page
 1)  [x] Add a menu item that starts TogetherJS
-1)  [ ] Ship it
+1)  [x] Ship it
 
 ### Feature set: rowse across hosts
 

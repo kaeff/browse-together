@@ -4,11 +4,15 @@
   "description": "A browser extension to view websites together, in real time. No set up required, just install the extension and share a link with your peer.",
   "main": "index.js",
   "dependencies": {
+    "togetherjs": "0.0.1",
     "web-ext": "^2.9.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "web-ext run --verbose"
+    "env": "source .env",
+    "test": "web-ext run --verbose",
+    "build": "web-ext build",
+    "sign": "web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET --id=$AMO_EXTENSION_ID"
   },
   "repository": {
     "type": "git",
