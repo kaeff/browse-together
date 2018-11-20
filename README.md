@@ -53,6 +53,9 @@ Proof of Concept / Work in progress
 
 1) Behavior of TogetherJS on different pages
 1) Content security policy
+    
+    Issue: TogetherJS loads more files (e.g. stylesheet) from its server. This might be circumvented by setting the `baseUrl` parameter in its config.
+
 1) TogetherJS quirks and incompatibilities on certain pages
 
 ### Observed TogetherJS quirks and incompatibilities
