@@ -13,6 +13,6 @@ loadScript('togetherjs-min.js');
 loadScript('button.js');
 
 browser.runtime.onMessage.addListener(request => {
-	window.postMessage(request);
+	window.postMessage(request, "*");
 	return Promise.resolve({response: "Hi from content script"});
 });
